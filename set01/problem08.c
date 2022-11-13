@@ -26,7 +26,6 @@ void input_array(int n,int a[n])
   for(i=0;i<n;i++){
     scanf("%d",&a[i]);
   }
-  //return a[n];
 }
 int sum_n_array(int n, int a[n])
 {

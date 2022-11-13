@@ -8,7 +8,7 @@ void output(char *string1, char *string2, int result);
 int main(){
   char str1[100],str2[100];
   int res;
-  input_two_strings(str1,str2);
+  input_two_strings(&str1,&str2);
   res=stringcompare(str1,str2);
   output(str1,str2,res);
 }
@@ -27,6 +27,8 @@ int stringcompare(char *string1, char *string2)
 
 void output(char *string1, char *string2, int result)
 {
+  printf("string1 is %s", string1);
+  printf("string 1 = %s string 2 = %s\n", string1, string2);
   if(result==0)
   {
     printf("strings are equal");
