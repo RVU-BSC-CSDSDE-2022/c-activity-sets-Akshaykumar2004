@@ -15,14 +15,28 @@ int main()
 float input()
 {
   float n;
+  printf("enter a number:");
   scanf("%f",&n);
   return n;
 }
 float square_root(float n)
 {
-  float sq_rt;
-  sq_rt=sqrt(n);
-  return sq_rt;
+  float x0,x,sqr;
+  x0=1;
+  while((sqr*sqr) != n)
+    {
+      x=0.5*(x0+n/x0);
+      if(x==x0)
+      {
+        sqr=x;
+        break;
+      }
+      else
+      {
+        x0=x;
+      }
+    }
+  return sqr;
 }
 void output(float n,float sqrroot)
 {
