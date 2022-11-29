@@ -13,6 +13,7 @@ int main(){
 int input_n()
 {
   int n;
+  printf("enter the Nth number:");
   scanf("%d",&n);
   return n;
 }

@@ -13,9 +13,9 @@ int main(){
 
 int input(){
   int n;
+  printf("Enter a number:");
   scanf("%d",&n);
-  return n;
-  
+  return n; 
 }
 
 int add(int a,int b){
